@@ -1,0 +1,37 @@
+﻿@using WorkWithAzureTable.Web.ViewModels;
+@{
+    var IsAdmin = true;
+    }
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div class="container">
+        <h2 class="logo">
+            Fun with Azure Tables
+        </h2>
+        <ul class="nav nav-tabs">
+            @Html.Partial("NavLink",new NavLinkViewModel{Name="Home", Action="Index", Controller="Home", RequestUrlPath = Request.Url.AbsolutePath})            
+            @Html.Partial("NavLink",new NavLinkViewModel{Name="Employes", Action="GetEmployes", Controller="Home", RequestUrlPath = Request.Url.AbsolutePath})  
+            @Html.Partial("NavLink",new NavLinkViewModel{Name="Departments", Action="GetDepartments", Controller="Home", RequestUrlPath = Request.Url.AbsolutePath})  
+            @if(IsAdmin)
+            {
+                @Html.Partial("NavLink", new NavLinkViewModel { Name = "Admin", Action = "Admin", Controller = "Home", RequestUrlPath = Request.Url.AbsolutePath })
+            }
+        </ul>
+        
+        <div>
+            @RenderBody()
+        </div>
+    </div>    
+</body>
+</html>

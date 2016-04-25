@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkWithAzureTable.Web", "WorkWithAzureTable.Web\WorkWithAzureTable.Web.csproj", "{863EB0D8-8903-4EC2-A73A-C398948EF98F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkWithAzureTable.Interfaces", "WorkWithAzureTable.Interfaces\WorkWithAzureTable.Interfaces.csproj", "{C0931B2B-22B2-4E50-B816-55D28FF32F5E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkWithAzureTable.Core", "WorkWithAzureTable.Core\WorkWithAzureTable.Core.csproj", "{4E55D2D7-6775-4DC3-B8C6-64D382BB6F2C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{863EB0D8-8903-4EC2-A73A-C398948EF98F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{863EB0D8-8903-4EC2-A73A-C398948EF98F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{863EB0D8-8903-4EC2-A73A-C398948EF98F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{863EB0D8-8903-4EC2-A73A-C398948EF98F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0931B2B-22B2-4E50-B816-55D28FF32F5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0931B2B-22B2-4E50-B816-55D28FF32F5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0931B2B-22B2-4E50-B816-55D28FF32F5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0931B2B-22B2-4E50-B816-55D28FF32F5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E55D2D7-6775-4DC3-B8C6-64D382BB6F2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E55D2D7-6775-4DC3-B8C6-64D382BB6F2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E55D2D7-6775-4DC3-B8C6-64D382BB6F2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E55D2D7-6775-4DC3-B8C6-64D382BB6F2C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
